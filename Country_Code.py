@@ -16,6 +16,13 @@ for i in range(len(a)):
     value_1+=ord(a[i])    
     value_2+=ord(b[i])
 
+if value_1>value_2:
+    temp=value_2
+    value_2=value_1
+    value_1=temp
+else:
+    pass    
+
 for x in country:
     temp=0
     for i in range(len(country[x])):
@@ -25,6 +32,4 @@ for x in country:
            
 final.sort()
 print(final)
-
-
 
